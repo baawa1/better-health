@@ -1,4 +1,10 @@
+import Home from "./pages/Home";
+
 const App = () => {
-  return <div className="font-bold text-3xl">App</div>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 };
 export default App;
