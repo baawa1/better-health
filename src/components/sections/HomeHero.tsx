@@ -41,7 +41,7 @@ const HomeHero = () => {
         <img
           src="/assets/home-hero-badge.svg"
           alt="Live a better live badge"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain lg:hidden"
         />
       </div>
       <img

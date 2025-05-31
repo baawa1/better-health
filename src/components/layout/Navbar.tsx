@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import Container from "../ui/Container";
+import Container from "../ui/container";
 
 const menuItems = [
   { label: "Treatment", path: "/treatment" },
@@ -24,7 +24,7 @@ const Navbar = () => {
               />
             </a>
           </div>
-          <div className="pl-18 sm:pl-24 w-full flex gap-4">
+          <div className="pl-18 sm:pl-24 w-full flex items-center gap-4">
             <div className="sm:justify-end md:justify-between flex justify-between items-center w-full">
               <div className="hidden md:flex">
                 <ul className="flex flex-col md:flex-row gap-4">
@@ -39,12 +39,12 @@ const Navbar = () => {
                 <Button className="px-4" variant="ghost" asChild>
                   <a href="/login">Login</a>
                 </Button>
-                <Button asChild>
+                <Button asChild className="font-normal">
                   <a href="/sign-up">Sign Up</a>
                 </Button>
               </div>
             </div>
-            <div className="bg-primary p-1.5 rounded-[8px] md:hidden">
+            <div className="bg-primary p-1.5 rounded-[8px] md:hidden flex items-center justify-center size-10 shrink-0">
               <img src="mobile-nav-icon.svg" alt="mobile nav icon" />
             </div>
           </div>

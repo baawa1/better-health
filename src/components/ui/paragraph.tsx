@@ -4,6 +4,12 @@ interface paragraphProps {
 }
 
 const Paragraph = ({ children, className }: paragraphProps) => {
-  return <p className={`md:text-lg leading-[160%] ${className}`}>{children}</p>;
+  return (
+    <p
+      className={`[&:not(:first-child)]:mt-6 md:text-lg leading-[160%] text-balance ${className}`}
+    >
+      {children}
+    </p>
+  );
 };
 export default Paragraph;
