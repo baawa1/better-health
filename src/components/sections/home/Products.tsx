@@ -16,7 +16,7 @@ const HomeProducts = () => {
   return (
     <section>
       <Container>
-        <div className="flex flex-col gap-4 max-w-xl">
+        <div className="flex flex-col max-w-xl gap-4">
           <H3Heading>What are you trying to solve?</H3Heading>
           <div>
             <Paragraph>
@@ -38,8 +38,8 @@ const HomeProducts = () => {
           >
             <CarouselContent>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Sexual <br /> Health
                   </p>
                   <img
@@ -50,8 +50,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Acne <br /> breakouts
                   </p>
                   <img
@@ -62,8 +62,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Hair <br /> loss
                   </p>
                   <img
@@ -74,8 +74,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Sexual <br /> Health 2
                   </p>
                   <img
@@ -86,8 +86,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Acne <br />
                     breakouts 2
                   </p>
@@ -99,8 +99,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Hair <br />
                     loss 2
                   </p>
@@ -112,8 +112,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Sexual <br /> Health 3
                   </p>
                   <img
@@ -124,8 +124,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Acne <br /> breakouts 3
                   </p>
                   <img
@@ -136,8 +136,8 @@ const HomeProducts = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="sm:basis-1/2 lg:basis-1/3">
-                <div className="relative bg-accent rounded-xl w-full aspect-square">
-                  <p className="absolute bottom-7 left-6 text-2xl font-semibold max-w-34">
+                <div className="relative w-full bg-accent rounded-xl aspect-square">
+                  <p className="absolute text-2xl font-semibold bottom-7 left-6 max-w-34">
                     Hair <br /> loss 3
                   </p>
                   <img
@@ -149,9 +149,9 @@ const HomeProducts = () => {
               </CarouselItem>
             </CarouselContent>
 
-            <div className="absolute -bottom-13 left-0 lg:-top-15 lg:right-0 lg:left-auto lg:bottom-auto flex gap-8 justify-center items-center max-w-20">
-              <CarouselPrevious className="border border-gray-950 size-6 relative top-0 bottom-0 right-0 left-0" />
-              <CarouselNext className="border border-gray-950 size-6 relative top-0 bottom-0 right-0 left-0" />
+            <div className="absolute left-0 flex items-center justify-center gap-8 -bottom-13 lg:-top-15 lg:right-0 lg:left-auto lg:bottom-auto max-w-20">
+              <CarouselPrevious className="relative top-0 bottom-0 left-0 right-0 border border-gray-950 size-6" />
+              <CarouselNext className="relative top-0 bottom-0 left-0 right-0 border border-gray-950 size-6" />
             </div>
           </Carousel>
         </div>

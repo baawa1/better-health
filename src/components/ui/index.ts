@@ -29,6 +29,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./accordion";
+import { Separator } from "./separator";
 
 //
 //
@@ -63,3 +64,4 @@ export { H2Heading };
 export { H3Heading };
 export { Paragraph };
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };
+export { Separator };

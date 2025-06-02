@@ -27,7 +27,7 @@ const HomeWhy = () => {
             <img
               src="assets/better-why-img-desktop.png"
               alt="better why card image"
-              className="w-full h-full object-cover rounded-4xl hidden md:block"
+              className="hidden object-cover w-full h-full rounded-4xl md:block"
             />
           </div>
           <div>
@@ -58,16 +58,16 @@ const HomeWhy = () => {
           Extract card data into an array and map over it to render cards.
         */}
 
-        <div className="grid grid-cols-1 gap-6 md:gap-y-5 md:gap-x-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 mt-12 md:gap-y-5 md:gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
           {homeCardContent.map((item, idx) => (
-            <Card key={idx} className="border-0 shadow-none gap-3">
+            <Card key={idx} className="gap-3 border-0 shadow-none">
               <CardHeader className="px-0">
                 <CardTitle className="flex flex-col gap-6">
                   <div className="size-8">
                     <img
                       src={item.icon}
                       alt={item.iconAlt}
-                      className="w-full h-full object-contain"
+                      className="object-contain w-full h-full"
                     />
                   </div>
                   <H3Heading>{item.title}</H3Heading>

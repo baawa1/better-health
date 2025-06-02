@@ -1,20 +1,13 @@
 import { Button } from "../ui/index";
 import { Container } from "../ui/index";
-
-const menuItems = [
-  { label: "Treatment", path: "/treatment" },
-  { label: "About", path: "/about" },
-  { label: "Services", path: "/services" },
-  { label: "FAQ", path: "/faq" },
-  { label: "Contact Us", path: "/contact" },
-];
+import { menuItems } from "../../data/menuItems.js";
 
 const Navbar = () => {
   return (
-    <header className="w-full sticky top-0 z-50 shadow-sm bg-accent text-accent-foreground">
+    <header className="sticky top-0 z-50 w-full shadow-sm bg-accent text-accent-foreground">
       <Container className="py-0">
-        <nav className="flex place-items-center w-full py-4">
-          <div className="flex justify-start items-center">
+        <nav className="flex w-full py-4 place-items-center">
+          <div className="flex items-center justify-start">
             <a className="w-28" href="/">
               <span className="sr-only">Better Doctor</span>
               <img
@@ -24,18 +17,18 @@ const Navbar = () => {
               />
             </a>
           </div>
-          <div className="pl-18 sm:pl-24 w-full flex items-center gap-4">
-            <div className="sm:justify-end md:justify-between flex justify-between items-center w-full">
+          <div className="flex items-center w-full gap-4 pl-18 sm:pl-24">
+            <div className="flex items-center justify-between w-full sm:justify-end md:justify-between">
               <div className="hidden md:flex">
-                <ul className="flex flex-col md:flex-row gap-4">
-                  {menuItems.map((item) => (
-                    <li key={item.label}>
+                <ul className="flex flex-col gap-4 md:flex-row">
+                  {menuItems.map((item, index) => (
+                    <li key={index}>
                       <a href={item.path}>{item.label}</a>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="hidden sm:flex gap-4 place-items-center">
+              <div className="hidden gap-4 sm:flex place-items-center">
                 <Button className="px-4" variant="ghost" asChild>
                   <a href="/login">Login</a>
                 </Button>
