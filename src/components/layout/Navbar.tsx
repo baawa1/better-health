@@ -1,5 +1,5 @@
-import { Button } from "../ui/button";
-import Container from "../ui/container";
+import { Button } from "../ui/index";
+import { Container } from "../ui/index";
 
 const menuItems = [
   { label: "Treatment", path: "/treatment" },
@@ -12,7 +12,7 @@ const menuItems = [
 const Navbar = () => {
   return (
     <header className="w-full sticky top-0 z-50 shadow-sm bg-accent text-accent-foreground">
-      <Container>
+      <Container className="py-0">
         <nav className="flex place-items-center w-full py-4">
           <div className="flex justify-start items-center">
             <a className="w-28" href="/">

@@ -1,18 +1,17 @@
-import { Button } from "../ui/button";
 import {
+  Button,
   Card,
   CardHeader,
   CardFooter,
   CardTitle,
-  CardAction,
-  CardDescription,
   CardContent,
-} from "../ui/card";
-import Container from "../ui/container";
-import H2Heading from "../ui/h2";
-import H3Heading from "../ui/h3";
-import Paragraph from "../ui/paragraph";
-import { homeCardContent } from "../../data/homeCardContent.js";
+  Container,
+  H2Heading,
+  H3Heading,
+  Paragraph,
+} from "../../ui/index";
+
+import { homeCardContent } from "../../../data/homeCardContent.js";
 
 const HomeWhy = () => {
   return (
@@ -59,7 +58,7 @@ const HomeWhy = () => {
           Extract card data into an array and map over it to render cards.
         */}
 
-        <div className="grid grid-cols-1 gap-6 md:gap-y-14 md:gap-x-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:gap-y-5 md:gap-x-6 mt-12 sm:grid-cols-2 lg:grid-cols-3">
           {homeCardContent.map((item, idx) => (
             <Card key={idx} className="border-0 shadow-none gap-3">
               <CardHeader className="px-0">

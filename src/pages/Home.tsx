@@ -1,7 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
-import HomeHero from "@/components/sections/HomeHero";
-import HomeProducts from "@/components/sections/HomeProducts";
-import HomeWhy from "@/components/sections/HomeWhy";
+import Hero from "@/components/sections/home/Hero";
+import HowItWorks from "@/components/sections/home/HowItWorks";
+import Products from "@/components/sections/home/Products";
+import Why from "@/components/sections/home/Why";
 
 const Home = () => {
   return (
@@ -9,9 +10,10 @@ const Home = () => {
       <div>
         <Navbar />
         <main>
-          <HomeHero />
-          <HomeWhy />
-          <HomeProducts />
+          <Hero />
+          <Why />
+          <Products />
+          <HowItWorks />
         </main>
       </div>
     </>
