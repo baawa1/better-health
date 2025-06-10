@@ -22,7 +22,6 @@ export const treatmentMenuItems: MenuItem[] = [
   { label: "Hair Loss", path: "/treatment/hair-loss" },
   { label: "Erectile Dysfunction", path: "/treatment/erectile-dysfunction" },
   { label: "Skincare", path: "/treatment/skincare" },
-  { label: "Hair Loss", path: "/treatment/hair-loss" },
   { label: "Weight Loss", path: "/treatment/weight-loss" },
   { label: "Scream Cream", path: "/treatment/scream-cream" },
 ];

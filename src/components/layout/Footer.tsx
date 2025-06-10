@@ -27,9 +27,8 @@ const Footer = () => {
               <p className="text-sm opacity-65">Company</p>
               <ul>
                 {footerMenuItems.map((item) => (
-                  <li>
+                  <li key={item.label}>
                     <Button
-                      key={item.label}
                       variant="link"
                       asChild
                       className="p-0 text-base text-primary-foreground hover:text-primary hover:no-underline"
@@ -44,9 +43,8 @@ const Footer = () => {
               <p className="text-sm opacity-65">Company</p>
               <ul>
                 {treatmentMenuItems.map((item) => (
-                  <li>
+                  <li key={item.label}>
                     <Button
-                      key={item.label}
                       variant="link"
                       asChild
                       className="p-0 text-base text-primary-foreground hover:text-primary hover:no-underline"
