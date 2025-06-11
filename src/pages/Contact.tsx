@@ -1,10 +1,6 @@
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
-
 const Contact = () => {
   return (
-    <div>
-      <Navbar />
+    <>
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold mb-4">Contact Us</h1>
         <p>
@@ -52,8 +48,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 export default Contact;

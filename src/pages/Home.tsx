@@ -1,5 +1,3 @@
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
 import CTA from "@/components/sections/home/CTA";
 import Hero from "@/components/sections/home/Hero";
 import HowItWorks from "@/components/sections/home/HowItWorks";
@@ -11,19 +9,13 @@ import Why from "@/components/sections/home/Why";
 const Home = () => {
   return (
     <>
-      <div>
-        <Navbar />
-        <main>
-          <Hero />
-          <Why />
-          <Products />
-          <HowItWorks />
-          <SuccessStories />
-          <Wellness />
-          <CTA />
-        </main>
-        <Footer />
-      </div>
+      <Hero />
+      <Why />
+      <Products />
+      <HowItWorks />
+      <SuccessStories />
+      <Wellness />
+      <CTA />
     </>
   );
 };

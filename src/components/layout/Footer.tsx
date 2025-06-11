@@ -5,6 +5,7 @@ import {
   socialLinks,
   footerLinks,
 } from "../../data/menuItems";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
       <Container>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-10">
           <div className="max-w-[320px] md:col-span-4">
-            <div>
+            <Link to="/">
               <img src="/assets/logo-white.svg" alt="Better Doctor Logo" />
-            </div>
+            </Link>
             <Paragraph className="text-base">
               Medicine and Lab Tests Prescribed Online Delivered to your Door.
               <br />
@@ -33,7 +34,7 @@ const Footer = () => {
                       asChild
                       className="p-0 text-base text-primary-foreground hover:text-primary hover:no-underline"
                     >
-                      <a href={item.path}>{item.label}</a>
+                      <Link to={item.path}>{item.label}</Link>
                     </Button>
                   </li>
                 ))}
@@ -49,7 +50,7 @@ const Footer = () => {
                       asChild
                       className="p-0 text-base text-primary-foreground hover:text-primary hover:no-underline"
                     >
-                      <a href={item.path}>{item.label}</a>
+                      <Link to={item.path}>{item.label}</Link>
                     </Button>
                   </li>
                 ))}
@@ -67,21 +68,21 @@ const Footer = () => {
                   asChild
                   className="items-start justify-start w-auto p-0 text-base text-primary-foreground hover:text-primary hover:no-underline size-auto"
                 >
-                  <a
-                    href="mailto:support@getbetterdoctor.com"
+                  <Link
+                    to="mailto:support@getbetterdoctor.com"
                     className="items-start px-0"
                   >
                     support@getbetterdoctor.com
-                  </a>
+                  </Link>
                 </Button>
                 <Button
                   variant={"link"}
                   asChild
                   className="items-start justify-start w-auto p-0 text-base text-primary-foreground hover:text-primary hover:no-underline size-auto"
                 >
-                  <a href="tel:+1-800-123-4567" className="items-start px-0">
+                  <Link to="tel:+1-800-123-4567" className="items-start px-0">
                     +1 (800) 123-4567
-                  </a>
+                  </Link>
                 </Button>
               </div>
               <div className="flex items-center gap-3 mt-4">
@@ -92,14 +93,15 @@ const Footer = () => {
                     asChild
                     className="items-start justify-start w-auto p-0 text-base text-primary-foreground hover:text-primary hover:no-underline size-auto"
                   >
-                    <a
-                      href={link.path}
+                    <Link
+                      to={link.path}
+                      target="_blank"
                       className="items-start p-2 border rounded-full border-primary-foreground"
                     >
                       <span className="flex items-center justify-center gap-2 size-5">
                         {link.icon}
                       </span>
-                    </a>
+                    </Link>
                   </Button>
                 ))}
               </div>
@@ -120,7 +122,7 @@ const Footer = () => {
                 asChild
                 className="p-0 text-base text-primary-foreground hover:text-primary hover:no-underline"
               >
-                <a href={link.path}>{link.label}</a>
+                <Link to={link.path}>{link.label}</Link>
               </Button>
             ))}
           </div>

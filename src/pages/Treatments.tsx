@@ -1,8 +1,8 @@
-const About = () => {
+const Treatments = () => {
   return (
     <>
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">About Us</h1>
+        <h1 className="text-2xl font-bold mb-4">Treatment Options</h1>
         <p>
           Here you can find information about various treatment options
           available for different medical conditions.
@@ -37,4 +37,4 @@ const About = () => {
     </>
   );
 };
-export default About;
+export default Treatments;
