@@ -31,6 +31,17 @@ import {
 } from "./accordion";
 import { Separator } from "./separator";
 
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "./navigation-menu";
+
 //
 //
 //
@@ -65,3 +76,13 @@ export { H3Heading };
 export { Paragraph };
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };
 export { Separator };
+export {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+};

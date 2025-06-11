@@ -7,7 +7,7 @@ interface MenuItem {
 
 export const menuItems: MenuItem[] = [
   { label: "Home", path: "/" },
-  { label: "Treatment", path: "/treatment" },
+  { label: "Treatments", path: "/treatments" },
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
   { label: "FAQ", path: "/faq" },
@@ -22,7 +22,6 @@ export const treatmentMenuItems: MenuItem[] = [
   { label: "Hair Loss", path: "/treatment/hair-loss" },
   { label: "Erectile Dysfunction", path: "/treatment/erectile-dysfunction" },
   { label: "Skincare", path: "/treatment/skincare" },
-  { label: "Hair Loss", path: "/treatment/hair-loss" },
   { label: "Weight Loss", path: "/treatment/weight-loss" },
   { label: "Scream Cream", path: "/treatment/scream-cream" },
 ];
